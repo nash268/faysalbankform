@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Faysal Bank Form</title>
+		<style>
+			body {
+			  font-family: Arial, sans-serif;
+			  margin: 40px;
+			}
+
+			form {
+			  max-width: 700px;
+			  margin: auto;
+			}
+
+			input {
+			  margin-bottom: 30px;
+			}
+
+			label {
+			  display: inline-block;
+			  width: 260px;
+			  font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			input[type="tel"],
+			textarea {
+			  border: none;
+			  border-bottom: 1px solid #000;
+			  outline: none;
+			  width: 350px;
+			  font-size: 16px;
+			  padding: 2px 5px;
+			}
+
+			textarea {
+			  resize: none;
+			  height: 60px;
+			}
+
+			input[type="submit"] {
+			  margin-top: 30px;
+			  padding: 10px 20px;
+			  font-size: 16px;
+			}
+		</style>
+	</head>
+	<body>
+		<div style="text-align: center; margin-bottom: 40px;">
+			<img src="faisal-logo.svg" alt="logo" />
+		</div>
+		<form>
+			<label for="fullname">Full Name (as per CNIC):</label>
+			<input type="text" id="fullname" name="fullname" />
+
+			<label for="cnic">CNIC Number:</label>
+			<input type="text" id="cnic" name="cnic" />
+
+			<label for="dob">Date of Birth:</label>
+			<input type="text" id="dob" name="dob" />
+
+			<label for="cnic_issue">CNIC Issuance Date:</label>
+			<input type="text" id="cnic_issue" name="cnic_issue" />
+
+			<label for="cnic_expiry">CNIC Expiry Date:</label>
+			<input type="text" id="cnic_expiry" name="cnic_expiry" />
+
+			<label for="mobile">Mobile Number:</label>
+			<input type="tel" id="mobile" name="mobile" />
+
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" />
+
+			<label for="mother_name">Mother's Name:</label>
+			<input type="text" id="mother_name" name="mother_name" />
+
+			<label for="father_name">Father's Name:</label>
+			<input type="text" id="father_name" name="father_name" />
+
+			<label for="other_contact">Other Contact No (Family Member):</label>
+			<input type="tel" id="other_contact" name="other_contact" />
+
+			<label for="address">Current Address:</label>
+			<textarea id="address" name="address" rows="3"></textarea>
+
+			<br /><br />
+            <button type="button" onclick="window.print()" style="font-size: 20px;">Print Form</button>
+		</form>
+	</body>
+</html>
